@@ -33,9 +33,10 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
-    justify-content: space-around; /* Trabajos y Contacto a los lados */
+    justify-content:  center; /* Trabajos y Contacto a los lados */
     align-items: center;
     padding: 10px 30px;
+    gap: 20px; /* Espacio entre elementos */
 }
 .nav-link {
     text-decoration: none;
@@ -43,6 +44,7 @@ h2 {
     font-weight: 700;
     font-size: 18px;
     transition: all 0.3s ease;
+     flex: 0;
 }
 .nav-link:hover {
     color: black;
