@@ -125,3 +125,53 @@ footer {
     background-color: #f9f9f9;
     color: #666;
 }
+/* Adaptaciones para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reducir el tamaño base del texto */
+    }
+
+    h1 {
+        font-size: 2rem; /* Encabezado más pequeño */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: column; /* Apilar los elementos en lugar de alinearlos horizontalmente */
+        padding: 15px 10px;
+    }
+
+    .nav-link {
+        margin: 5px 0; /* Espacio entre enlaces */
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 80px 10px 30px; /* Reducir los márgenes */
+    }
+
+    .photo-container img {
+        width: 100%; /* Ajustar al ancho del contenedor */
+        height: auto;
+    }
+
+    .spotify-section iframe {
+        height: 400px; /* Reducir la altura del iframe */
+    }
+
+    .links {
+        flex-direction: column; /* Apilar los enlaces */
+        gap: 10px;
+    }
+
+    .links a {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px; /* Reducir el texto del pie de página */
+    }
+}
