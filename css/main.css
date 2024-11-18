@@ -125,53 +125,52 @@ footer {
     background-color: #f9f9f9;
     color: #666;
 }
-/* Adaptaciones para dispositivos móviles */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
-        font-size: 14px; /* Reducir el tamaño base del texto */
+        font-size: 14px;
     }
 
     h1 {
-        font-size: 2rem; /* Encabezado más pequeño */
+        font-size: 1.8rem; /* Aún más pequeño si es necesario */
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .navbar {
-        flex-direction: column; /* Apilar los elementos en lugar de alinearlos horizontalmente */
-        padding: 15px 10px;
+        flex-direction: column;
+        align-items: center; /* Alinear elementos al centro */
+        gap: 10px; /* Espacio entre elementos */
     }
 
     .nav-link {
-        margin: 5px 0; /* Espacio entre enlaces */
+        padding: 10px 0;
         font-size: 16px;
     }
 
     .hero {
-        padding: 80px 10px 30px; /* Reducir los márgenes */
+        padding: 60px 10px;
     }
 
     .photo-container img {
-        width: 100%; /* Ajustar al ancho del contenedor */
+        width: 100%;
+        max-width: 400px; /* Limitar ancho máximo */
         height: auto;
     }
 
     .spotify-section iframe {
-        height: 400px; /* Reducir la altura del iframe */
+        width: 100%;
+        height: 300px;
     }
 
     .links {
-        flex-direction: column; /* Apilar los enlaces */
+        flex-direction: column;
         gap: 10px;
     }
 
-    .links a {
-        font-size: 16px;
-    }
-
     footer {
-        font-size: 14px; /* Reducir el texto del pie de página */
+        font-size: 12px;
     }
 }
+
