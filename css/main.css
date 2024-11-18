@@ -1,0 +1,127 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    color: #333;
+    line-height: 1.6;
+}
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+}
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8rem; /* Tamaño más grande */
+    margin-bottom: 15px;
+}
+
+/* Solapa superior (navbar) */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around; /* Trabajos y Contacto a los lados */
+    align-items: center;
+    padding: 10px 30px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.nav-link:hover {
+    color: black;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección destacada (hero) */
+.hero {
+    text-align: center;
+    padding: 120px 20px 50px;
+    background-color: #f9f9f9;
+}
+.photo-container img {
+    margin-top: 20px;
+    width: 900px;
+    height: auto;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Líneas divisorias */
+.section-divider {
+    margin: 30px auto;
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    width: 90%; /* Respeta los márgenes laterales */
+}
+
+/* Spotify integrado */
+.spotify-section iframe {
+    border-radius: 12px;
+    width: 90%; /* Márgenes horizontales simétricos */
+    height: 752px;
+    margin: 0 auto;
+    display: block;
+}
+.spotify-section {
+    margin-bottom: 150px; /* Espacio extra para evitar que el iframe toque la sección Contacto */
+}
+/* Contacto */
+.contact {
+    text-align: center;
+}
+.email a {
+    color: #007BFF;
+    font-size: 18px;
+    text-decoration: none;
+}
+.email a:hover {
+    color: #0056b3;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.links img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.links a:hover {
+    color: #007BFF;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #666;
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JOAQUÍN SEBASTIÁN VIÑAS</title>
+
+        <!-- Fuente elegante desde Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Estilos principales -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+         <!-- Ancla para volver arriba -->
+    <div id="inicio"></div>
+        <!-- Solapa superior -->
+        <nav class="navbar">
+            <a href="#trabajos" class="nav-link">Trabajos</a>
+            <h1><a href="#inicio">JOAQUÍN SEBASTIÁN VIÑAS</a></h1>
+            <a href="#contacto" class="nav-link">Contacto</a>
+        </nav>
+
+        <!-- Sección destacada -->
+        <section class="hero">
+            <h2>Productor. Compositor. Mix y Master. Arreglos. Guitarrista. </h2>
+            <div class="photo-container">
+                <img src="img/Snapshot_12.png" alt="Foto de Joaquín S. Viñas">
+            </div>
+        </section>
+
+        <!-- Línea divisoria -->
+        <hr class="section-divider">
+
+        <!-- Sección Trabajos -->
+        <section id="trabajos" class="section spotify-section">
+            <h2>Trabajos</h2>
+            <iframe src="https://open.spotify.com/embed/playlist/2eyqWehsdzuWwctoS8sl0b?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+
+        <!-- Línea divisoria -->
+        <hr class="section-divider">
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <div class="contact">
+                <p class="email">
+                    <a href="mailto:joaquinsebastianvinas@gmail.com">joaquinsebastianvinas@gmail.com</a>
+                </p>
+                <div class="links">
+                    <a href="https://www.instagram.com/joaquin.vinas" target="_blank">
+                        <img src="iconos/instagram.png" alt="Instagram"> Instagram
+                    </a>
+                    <a href="https://www.youtube.com/@joaquinvinas4883" target="_blank">
+                        <img src="iconos/youtube.png" alt="YouTube"> YouTube
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Línea divisoria -->
+        <hr class="section-divider">
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 JOAQUÍN SEBASTIÁN VIÑAS</p>
+        </footer>
+
+        <!-- Script para desplazamiento suave -->
+        <script>
+            document.querySelectorAll('.navbar a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
