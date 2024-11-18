@@ -142,9 +142,10 @@ footer {
     }
 
     .navbar {
-        flex-direction: column;
-        align-items: center; /* Alinear elementos al centro */
-        gap: 10px; /* Espacio entre elementos */
+       flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
     .nav-link {
