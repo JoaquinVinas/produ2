@@ -147,7 +147,7 @@ footer {
        flex-direction: column; /* Coloca los elementos uno debajo del otro */
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        text-align: center;
     }
 
     .nav-link {
