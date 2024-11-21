@@ -70,19 +70,26 @@
         </footer>
 
         <!-- Script para desplazamiento suave -->
-        <script>
-            document.querySelectorAll('.navbar a').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                     const offset = 250; // Ajusta el espacio superior (en píxeles)
-                    const topPosition = target.getBoundingClientRect().top + window.scrollY - offset;
-                      window.scrollTo({
-                        top: topPosition,
-                        behavior: 'smooth'
-                    });
-                });
+       <script>
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+
+            // Detectar dispositivo
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+
+            // Ajustar offset según el dispositivo
+            const offset = isMobile ? 270 : 80; // Menor espacio en móviles
+            const topPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+
+            // Desplazamiento suave
+            window.scrollTo({
+                top: topPosition,
+                behavior: 'smooth'
             });
-        </script>
+        });
+    });
+</script>
     </body>
 </html>
