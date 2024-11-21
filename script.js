@@ -5,7 +5,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         // Ajustar la posición del scroll
         window.scrollTo({
-            top: target.offsetTop - 200, // Espacio extra
+            top: target.offsetTop + 100, // Espacio extra
             behavior: 'smooth',
         });
     });
