@@ -75,7 +75,7 @@
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const target = document.querySelector(this.getAttribute('href'));
-                     const offset = 80; // Ajusta el espacio superior (en píxeles)
+                     const offset = 250; // Ajusta el espacio superior (en píxeles)
                     const topPosition = target.getBoundingClientRect().top + window.scrollY - offset;
                       window.scrollTo({
                         top: topPosition,
