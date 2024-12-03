@@ -35,7 +35,7 @@ h2 {
     display: flex;
     justify-content:  center; /* Trabajos y Contacto a los lados */
     align-items: center;
-    padding: 10px;
+    padding: 0px;
     gap: 20px; /* Espacio entre elementos */
 }
 .nav-link {
